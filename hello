@@ -1,0 +1,12 @@
+pipeline {
+   agent { label 'windows' }
+
+   stages {
+      stage('Hello') {
+         steps {
+            echo 'Hello World'
+            git 'https://github.com/tarraanand/ATOS2.git'
+         }
+      }
+   }
+}
